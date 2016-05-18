@@ -66,6 +66,26 @@ a {
     vertical-align: top;
 }
 
+.main-navigation .logo-inner {
+    float: left;
+    width: 111px;
+    height: 20px;
+}
+
+.main-navigation .logo-inner img {
+    width: 111px;
+    height: 20px;
+}
+
+.main-navigation .logo-inner:hover {
+    background: none;
+}
+
+.main-navigation .active {
+    position: relative;
+    background-color: none;
+}
+
 .user-block {
     max-width: 140px;
     float: right;
@@ -365,7 +385,7 @@ a {
 .social-btn-inst {
     background-position: -57px 10px;
 }
- 
+
 .social-btn-vk:hover,
 .social-btn-fb:hover,
 .social-btn-inst:hover,
