@@ -365,5 +365,11 @@ a {
 .social-btn-inst {
     background-position: -57px 10px;
 }
+.social-btn-vk:hover,
+.social-btn-fb:hover,
+.social-btn-inst:hover,
+.footer-copyright .btn:hover  {
+    background-color: #404040;
+}
 
 /* main-footer */
