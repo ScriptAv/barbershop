@@ -1,15 +1,187 @@
-*{
+/* общие стили */
+html,
+body {
     margin: 0;
     padding: 0;
 }
-.nav{
-    background-color: #343434;
-    height: 100px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+
+body {
+    min-height: 960px;
+    background: #000 url(img/background.jpg) no-repeat center top;
+    font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+    font-weight: 700;
+    font-style: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #fff;
 }
 
-#top_nav{
-    
+a {
+    color: #fff;
+    text-decoration: none;
 }
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* общие стили */
+/* header */
+.main-header {
+    background-color: #000;
+    margin-bottom: 60px;
+    color: #fff;
+}
+.container {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.main-navigation a{
+    color: #fff;
+    display: block;
+    padding: 25px 20px;
+}
+
+.main-navigation a:hover {
+    background: #242424;
+}
+
+.main-navigation {
+    width: 740px;
+    float: left;
+}
+
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+.main-navigation li{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: top;
+}
+
+.user-block {
+    max-width: 140px;
+    float: right;
+}
+.login {
+    display: inline-block;
+    vertical-align: top;
+    padding: 25px 20px;
+    padding-left: 50px;
+    font-style: 16px;
+    line-height: 20px;
+    color: #fff;
+    position: relative;
+}
+
+.login::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    width: 18px;
+    height: 18px;
+    background: url(img/sprite.png) no-repeat;
+    background-position: -23px -4px;
+    opacity: 0.3;
+}
+
+.login:hover {
+    background: #242424;
+}
+
+.login:hover::before {
+    opacity: 1;
+}
+
+/* header */
+/* logo */
+.index-logo {
+    height: 204px;
+    width: 362px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+/* logo */
+/* features */
+.features-item {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.features-item:last-child {
+    margin-right: 0;
+}
+
+.features-name {
+    display: block;
+    text-align: center;
+}
+
+.features-name::after {
+    display: block;
+    background-image: url(img/features-icon.svg);
+    background-repeat: no-repeat;
+    height: 29px;
+    width: 29px;
+    content: "";
+    margin: 10px 140px;
+}
+
+.features {
+    margin-bottom: 80px;
+}
+/* features */
+/* index-content */
+.index-content {
+    padding: 50px 80px;
+    color: #000;
+    margin-bottom: 35px;
+    background: #fff;
+}
+
+.index-content-left {
+    float: left;
+    width: 380px;
+}
+
+.index-content-right {
+    float: right;
+    width: 300px;
+}
+/* index-content */
+/* main-footer */
+.main-footer {
+    margin-top: 65px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #202020;
+}
+
+.footer-contacts {
+    float: left;
+    width: 320px;
+    margin-right: 60px;
+}
+
+.footer-social {
+    float: left;
+    width: 180px;
+}
+
+.footer-copyright {
+    float: right;
+    width: 180px;
+}
+/* main-footer */
